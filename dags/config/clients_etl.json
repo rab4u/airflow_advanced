@@ -1,0 +1,14 @@
+[
+  {
+    "dag_id": "client_a",
+    "schedule": "@daily"
+  },
+  {
+    "dag_id": "client_b",
+    "schedule": "@daily"
+  },
+  {
+    "dag_id": "client_c",
+    "schedule": "@daily"
+  }
+]

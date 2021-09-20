@@ -18,7 +18,9 @@ dag = DAG(
     default_args=default_args,
     catchup=False,
     schedule_interval="@once",
-    is_paused_upon_creation=True)
+    is_paused_upon_creation=True,
+    tags=['airflow_workshop', 'dev']
+    )
 
 t1 = BashOperator(
     task_id="HelloWorld",

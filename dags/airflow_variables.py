@@ -23,7 +23,9 @@ dag = DAG(
     default_args=default_args,
     catchup=False,
     schedule_interval="@once",
-    is_paused_upon_creation=True)
+    is_paused_upon_creation=True,
+    tags=['airflow_workshop', 'dev']
+    )
 
 t2 = BashOperator(
     task_id="print_airflow_variables",
