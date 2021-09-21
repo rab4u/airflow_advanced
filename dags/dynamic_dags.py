@@ -20,6 +20,7 @@ def create_client_etl_dags(dag_id,
 
     dag = DAG(dag_id,
               schedule_interval=schedule,
+
               default_args=default_args,
               tags=[f"airflow_workshop_{dag_id}", 'dev']
               )
